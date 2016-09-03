@@ -1,0 +1,6 @@
+{
+  "name": "بريد",
+  "tagline": "إرسال رسالة",
+  "body": "<form method=\"POST\" action=\"http://formspree.io/niceperson_niceperson@bigfoot.com\">\r\n  <input dir=\"rtl\" lang=\"ar\" type=\"email\" name=\"email\" placeholder=\"أدخل إيميلك هنا\">\r\n  <textarea dir=\"rtl\" lang=\"ar\" name=\"message\" placeholder=\"أدخل رسالتك هنا\"></textarea>\r\n  <button type=\"submit\">أرسل</button>\r\n</form>",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
