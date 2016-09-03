@@ -8,8 +8,8 @@
     padding: 10px;
 }
 
-input { width: 90%; margin: 0; padding: 0;  }
-textarea { height: 50%; width: 90%; margin: 0; padding: 0;  }
+input { max-width: 90%; width: 90%; margin: 0; padding: 0;  }
+textarea { max-width: 90%; height: 50%; width: 90%; margin: 0; padding: 0;  }
 $(document).ready(function(){
     $('textarea').autosize();   
 });
@@ -28,7 +28,7 @@ $(document).ready(function(){
   <body>
     <section class="page-header">
       <h1 class="project-name">صفحة لإرسال بريد لشخص جيد</h1>
-      <h2 dir="rtl" class="project-tagline">يمكنك مراسلة شخص جيد من خلال البريد التالي <a href="mailto:niceperson_niceperson@bigfoot.com" target="_top">niceperson_niceperson@bigfoot.com</a> أو من خلال النموذج التالي</h2>
+      <h2 dir="rtl" class="project-tagline">يمكنك مراسلة شخص جيد من خلال البريد التالي <a href="mailto:niceperson_niceperson@bigfoot.com" target="_top" style="color: #CC0000">niceperson_niceperson@bigfoot.com</a> أو من خلال النموذج التالي</h2>
     </section>
 
 <center><form method="POST" action="http://formspree.io/niceperson_niceperson@bigfoot.com">
@@ -44,7 +44,7 @@ $(document).ready(function(){
   
 
 
-      <footer class="site-footer">
+      <footer dir="rtl" class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/nicepersonniceperson/mail">هذه الصفحة</a> تحت إشراف <a href="https://github.com/nicepersonniceperson">شخص جيد</a>.</span>
 
         <span class="site-footer-credits">تم إنشاء الصفحة بواسطة <a href="https://pages.github.com">صفحات جيت هب</a> باستخدام <a href="https://github.com/jasonlong/cayman-theme">هذا التصميم</a> الذي تم صنعه بواسطة <a href="https://twitter.com/jasonlong">جاسون لونج</a>.</span>
