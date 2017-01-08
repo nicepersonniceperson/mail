@@ -1,6 +1,16 @@
+<script>
+function check() {
+    if(document.forms["my_form"]["text1"].value == "")
+        document.forms["my_form"]["text1"].value = "empty";
+}
+</script> 
+
+<style>
+input[type='text'] { font-size: 24px; }
+    {text-shadow:1px 1px 1px rgba(255,255,0,1);font-weight:normal;color:#1A024A;background-color:#FFD95C;border: 34px solid #00FF4C;letter-spacing:5pt;word-spacing:10pt;font-size:25px;text-align:right;font-family:arial black, sans-serif;line-height:2;margin:0px;padding:0px;}
+</style>
 
 <style type="text/css">
-
 .container { width: 400px; border: 3px solid #f7c; }
 .textareaContainer {
     display: block;
@@ -26,20 +36,20 @@ $(document).ready(function(){
     <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
   </head>
   <body>
-    <section class="page-header">
+    <!--<section class="page-header">
       <h1 class="project-name">صفحة لإرسال بريد لشخص جيد</h1><br>
       <h2 dir="rtl" class="project-tagline">يمكنك مراسلة شخص جيد من خلال البريد التالي <a href="mailto:niceperson_niceperson@bigfoot.com" target="_top" style="color: #CC0000">niceperson_niceperson@bigfoot.com</a> أو من خلال النموذج التالي أو بدلاً من ذلك يمكنك <a href="https://www.ejaaba.com/ask?id=13124" target="_top" style="color: #CC0000">طرح سؤال على شخص جيد من خلال موقع إجابة</a></h2>
-    </section>
+    </section>-->
 
 <center>
     <?php
     echo $_SERVER['https://github.io'];
 ?>
-    <form method="POST" action="https://formspree.io/niceperson_niceperson@bigfoot.com">
+    <form name="my_form" method="POST" action="https://formspree.io/niceperson_niceperson@bigfoot.com" onsubmit="check()">
 <br>
-  <input dir="rtl" lang="ar" type="email" name="email" placeholder="أدخل إيميلك هنا"><br><br>
+  <input name="text1" dir="rtl" lang="ar" type="email" name="email" placeholder="أدخل إيميلك هنا"><br><br>
 
-  <textarea dir="rtl" lang="ar" name="message" placeholder="أدخل رسالتك هنا"></textarea><br><br>
+  <textarea dir="rtl" lang="ar" name="message" type="text" placeholder="أدخل رسالتك هنا"></textarea><br><br>
   <button type="submit">أرسل</button>
 </form>
 </center>
