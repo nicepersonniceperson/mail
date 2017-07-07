@@ -49,7 +49,7 @@ function check() {
     echo $_SERVER['https://github.io'];
 ?>
     <br>
-    <script>function reparf() {var x=document.getElementById("repar").value;var y=document.getElementById("reparn").value;var j="";for (i=0; i<x.length; i++) { if (i%y==0) {  j+=" "; } j+=x.charAt(i); }document.getElementById("repar").value=j;}function repard() { if ( document.getElementById("repar").dir == "rtl" )  document.getElementById("repar").dir="ltr";  else  document.getElementById("repar").dir="rtl"; }</script><p> إضافة مسافة بعد عدد معين من الحروف </p><br><button style="width: 100%" onclick="repard()">تغيير الاتجاه</button><br><textarea placeholder="اكتب النص هنا" id="repar"></textarea><br><input id="reparn" placeholder="ما عدد الحروف التي تريد إضافة مسافة بعدها؟ مثلاً: 1" type="number"><br><button onclick="reparf()">تبديل</button>
+    <script>function reparf() {var x=document.getElementById("repar").value;var y=document.getElementById("reparn").value;var j="";for (i=1; i<x.length; i++) { if (i%y==0) {  j+=" "; } j+=x.charAt(i); }document.getElementById("repar").value=j;}function repard() { if ( document.getElementById("repar").dir == "rtl" )  document.getElementById("repar").dir="ltr";  else  document.getElementById("repar").dir="rtl"; }</script><p> إضافة مسافة بعد عدد معين من الحروف </p><br><button style="width: 100%" onclick="repard()">تغيير الاتجاه</button><br><textarea placeholder="اكتب النص هنا" id="repar"></textarea><br><input id="reparn" placeholder="ما عدد الحروف التي تريد إضافة مسافة بعدها؟ مثلاً: 1" type="number"><br><button onclick="reparf()">تبديل</button>
      <br>
       <hr>
       <p> إرسال الرسائل هنا </p>
